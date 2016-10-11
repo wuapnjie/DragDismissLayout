@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xiaopo.flying.dragdismisslayout.MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#77000000" />
+
+    <com.xiaopo.flying.dragdismisslayout.DragDismissLayout
+        android:id="@+id/drag_dismiss_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<ScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/colorAccent"-->
+                <!--android:gravity="center"-->
+                <!--android:onClick="sayHello"-->
+                <!--android:text="@string/longtext"-->
+                <!--android:textSize="32sp" />-->
+        <!--</ScrollView>-->
+
+        <android.support.v7.widget.RecyclerView
+            android:background="@android:color/white"
+            android:id="@+id/text_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.xiaopo.flying.dragdismisslayout.DragDismissLayout>
+</FrameLayout>
+
+
